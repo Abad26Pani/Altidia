@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modelo Altidia</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      model-viewer {
+        width: 100%;
+        height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer src="Botella_Altidia4.glb"
+      ar 
+      ar-modes="scene-viewer webxr quick-look" 
+      camera-controls 
+      tone-mapping="neutral"
+      shadow-intensity="1"
+      exposure="1"
+      shadow-softness="1"
+      autoplay
+      auto-rotate
+      alt="Botella Altidia">
+      
+      <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
+      <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+    </model-viewer>
+  </body>
+</html>
